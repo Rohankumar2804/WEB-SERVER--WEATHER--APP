@@ -9,13 +9,18 @@ const forecast = (latitude, longitude, callback) => {
     } else if (response.body.message) {
       console.log("Unable to find location", undefined);
     } else {
+      console.log(response);
       callback(
         undefined,
         "It is currently " +
           response.body.main.temp +
           " degree celcuis and there is " +
           response.body.weather[0].description +
-          " weather"
+          " weather" +
+          "Today the temperature high  will be " +
+          response.body.main.temp_max +
+          " and low  will be" +
+          response.body.main.temp_min
       );
     }
   });
