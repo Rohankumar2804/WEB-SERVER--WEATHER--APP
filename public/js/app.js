@@ -1,4 +1,3 @@
-console.log("client side javascript file js");
 //GOAL FETCH WEATHER
 //SET UP A CALL TO FETCH WEATHER OF JARANG RAMPUR
 // GET THE PARSED JSON RESPONSE
